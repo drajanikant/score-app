@@ -11,3 +11,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.row {
+  clear: both;
+}
+
+.country {
+  float: left;
+  width: 250px;
+}
+
+.country form {
+  float: left;
+}
+
+.country .country-input {
+  width: 100px;
+}
+
+.average {
+  float: left;
+  width: 250px;
+}
+
+
+.horiz-bar {
+  float: left;
+  display: inline-block;
+  background-color: blue;
+  border-style: solid;
+  border-color: black;
+}
+
+.bar-wrapper{
+  float: left;
+  width: 250px;
+}
+
+@media only screen and (min-width: 900px) {
+  .country, .average, .bar-wrapper{
+    width: 250px;
+  }  
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px){
+  .country, .average, .bar-wrapper{
+    width: 200px;
+  }  
+}
+
+
+@media only screen and (max-width: 600px) {
+  .country, .average, .bar-wrapper{
+    width: 300px;
+  }  
+}
